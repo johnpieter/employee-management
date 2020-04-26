@@ -1,0 +1,104 @@
+<div class="row right-side">
+  <div class="col-md-8">
+    <div class="layout-center">
+      <div class="row space-3">
+        <div class="col-md-12 header-text">
+          Add Employee
+        </div>
+      </div>
+      <div class="row space-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 fix-text">
+          USERNAME: 
+        </div>
+        <div class="col-md-8">
+          <input id="username" class="form-control width-field" type="text" placeholder="Username" [(ngModel)]="model.userName"/>
+        </div>
+      </div>
+      <div class="row space-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 fix-text">
+          FIRST NAME: 
+        </div>
+        <div class="col-md-8">
+          <input id="firstname" class="form-control width-field" type="text" placeholder="first name" [(ngModel)]="model.firstName"/>
+        </div>
+      </div>
+      <div class="row space-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 fix-text">
+          LAST NAME: 
+        </div>
+        <div class="col-md-8">
+          <input id="lastname" class="form-control width-field" type="text" placeholder="last name" [(ngModel)]="model.lastName"/>
+        </div>
+      </div>
+      <div class="row space-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 fix-text">
+          EMAIL: 
+        </div>
+        <div class="col-md-8">
+          <input id="email" class="form-control width-field" type="text" placeholder="email" [(ngModel)]="model.email"/>
+        </div>
+      </div>
+      <div class="row space-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 fix-text">
+          BIRTH DATE: 
+        </div>
+        <div class="col-md-8">
+          <div>
+            <my-date-picker name="mydate" [options]="myDateRangePickerOptions" [(ngModel)]="model.birthDate"
+      (dateChanged)="onDateChange($event)"></my-date-picker>
+          </div>
+        </div>
+      </div>
+      <div class="row space-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 fix-text">
+          SALARY: 
+        </div>
+        <div class="col-md-8">
+          <input id="salary" class="form-control width-field" type="number" placeholder="salary" [(ngModel)]="model.salary"/>
+        </div>
+      </div>
+      <div class="row space-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 fix-text">
+          STATUS: 
+        </div>
+        <div class="col-md-8">
+          <input id="status" class="form-control width-field" type="text" placeholder="status" [(ngModel)]="model.status"/>
+        </div>
+      </div>
+      <div class="row space-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 fix-text">
+          GROUP: 
+        </div>
+        <div class="col-md-8">
+          <input id="group" class="form-control width-field" type="text" placeholder="group" [(ngModel)]="model.group"/>
+        </div>
+      </div>
+      <div class="row space-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 fix-text">
+          DESCRIPTION: 
+        </div>
+        <div class="col-md-8">
+          <input id="description" class="form-control width-field" type="text" placeholder="description" [(ngModel)]="model.description"/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="button-center">
+            <button class="btn ms_btn_black" (click)="login()">SAVE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+</div>

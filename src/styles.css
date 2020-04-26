@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.ms_btn_black{ background: #000000; color: white}
+
+.menu_container{
+    width: fit-content;
+    display: flex;
+    flex-flow: column;
+  }
+
+.content_container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.container-button{
+  height: 2.2rem;
+  margin: 6px 0px !important;
+  border-radius: 0;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  border: none;
+  height: fit-content;
+  width: fit-content;
+  background: white !important;
+  max-width: 264px;
+}
+
+html, body {
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  background: #EFEFEF !important;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+html, body, div{
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0;
+}

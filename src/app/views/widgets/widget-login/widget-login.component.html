@@ -1,0 +1,35 @@
+<div class="row space"></div>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="layout-center">
+      <div class="row space-3">
+        <div class="col-md-12 header-text">
+          EmployeeManagement Login
+        </div>
+      </div>
+      <div class="row space-2">
+        <div class="col-md-3 fix-text">
+          USERNAME: 
+        </div>
+        <div class="col-md-8">
+          <input id="username" class="form-control" type="text" placeholder="Username" [(ngModel)]="username"/>
+        </div>
+      </div>
+      <div class="row space-3">
+        <div class="col-md-3 fix-text">
+          PASSWORD: 
+        </div>
+        <div class="col-md-8">
+          <input id="password" class="form-control" type="password" placeholder="Password" [(ngModel)]="password"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button class="btn ms_btn_black" (click)="login()">LOGIN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>

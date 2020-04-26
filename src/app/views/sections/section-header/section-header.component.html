@@ -1,0 +1,11 @@
+<div class="row space">
+  <div class="col-md-2"></div>
+  <div class="col-md-8 header-text">
+    Employee Management
+  </div>
+  <div class="col-md-2">
+    <div *ngIf="auth.isLoggedIn()" class="right-side">
+      <button [routerLink]="['/login']" class="btn ms_btn_black btn-set">Logout</button>
+    </div>
+  </div>
+</div>
